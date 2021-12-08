@@ -9,6 +9,10 @@ setup:
 	# Create python virtualenv & source it
 	# source ~/.devops/bin/activate
 	python3 -m venv ~/.devops
+	chmod +x ./make_prediction.sh
+	chmod +x ./run_docker.sh
+	chmod +x ./run_kubernetes.sh
+	chmod +x ./upload_docker.sh
 
 install:
 	# This should be run from inside a virtualenv
