@@ -6,9 +6,13 @@
 # (Optional) Build a simple integration test
 
 setup:
+	# Create the corresponding directory for the python virtual at first
+	# mkdir ~/.devops
 	# Create python virtualenv & source it
 	# source ~/.devops/bin/activate
+	# Deactivate virtualenv with command 'deactivate'
 	python3 -m venv ~/.devops
+	chmod +x ./resize.sh
 	chmod +x ./make_prediction.sh
 	chmod +x ./run_docker.sh
 	chmod +x ./run_kubernetes.sh
