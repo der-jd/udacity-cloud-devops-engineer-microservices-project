@@ -9,7 +9,7 @@ setup:
 	# Create python virtualenv & source it
 	# source ~/.devops/bin/activate
 	# Deactivate virtualenv with command 'deactivate'
-	if [ ! -d "~/.devops" ]; then \
+	if [ ! -d ~/.devops ]; then \
 		mkdir ~/.devops; \
 	fi
 	python3 -m venv ~/.devops
