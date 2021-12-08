@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # This file runs a K8s pod with the containerized application
+# Assumes that an image is uploaded to DockerHub via `upload_docker.sh`
 
 # Step 1:
 # This is your Docker ID/path
