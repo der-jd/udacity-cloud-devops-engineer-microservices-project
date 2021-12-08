@@ -34,6 +34,15 @@ python3 -m pip install --user virtualenv
 python3 -m virtualenv --python=<path-to-Python3.7> .devops
 source .devops/bin/activate
 ```
+* Run `make setup`
+* When using AWS EC2 instance, resize storage volume: call `resize.sh`
+* Install `Docker` on Linux
+* Install `kubectl` on Linux (https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
+    * curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+    * sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+* Install `minikube` on Linux
+    * curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+    * sudo install minikube-linux-amd64 /usr/local/bin/minikube
 * Run `make install` to install the necessary dependencies
 
 ### Running `app.py`
