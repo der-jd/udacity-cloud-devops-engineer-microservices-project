@@ -16,6 +16,7 @@ setup:
 	chmod +x ./make_prediction.sh
 	chmod +x ./run_docker.sh
 	chmod +x ./run_kubernetes.sh
+	chmod +x ./delete_kubernetes.sh
 	chmod +x ./upload_docker.sh
 
 install:
