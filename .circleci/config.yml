@@ -25,6 +25,7 @@ jobs:
                     make setup
                     source ~/.devops/bin/activate
                     make install
+                    make install_hadolint
             - save_cache:
                 paths:
                     - ~/.devops
