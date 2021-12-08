@@ -17,7 +17,9 @@ setup:
 install:
 	# This should be run from inside a virtualenv
 	pip install --upgrade pip &&\
-		pip install -r requirements.txt &&\
+		pip install -r requirements.txt
+
+install_hadolint:
 	wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v2.8.0/hadolint-Linux-x86_64 &&\
     chmod +x /bin/hadolint
 
@@ -34,4 +36,4 @@ lint:
 	# This should be run from inside a virtualenv
 	pylint --disable=R,C,W1203,W1202 app.py
 
-all: install lint test
+all: install install_hadolint lint test

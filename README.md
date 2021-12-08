@@ -44,6 +44,7 @@ source .devops/bin/activate
     * curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
     * sudo install minikube-linux-amd64 /usr/local/bin/minikube
 * Run `make install` to install the necessary dependencies
+* Run `sudo make install_hadolint` to install hadolint on Linux
 
 ### Running `app.py`
 
